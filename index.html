@@ -31,7 +31,7 @@
     <script type="text/javascript">
         /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
         (function (d, m) {
-            var kommunicateSettings = { "appId": "19b5feeea68bbda6b092915fcf0e7ebc3", "conversationTitle": "Banking Cat", "botIds": ["google"] };
+            var kommunicateSettings = { "appId": "19b5feeea68bbda6b092915fcf0e7ebc3", "conversationTitle": "Banking Cat", "botIds": ["bankingcat"] };
             var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
             s.src = "https://api.kommunicate.io/v2/kommunicate.app";
             var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
@@ -65,14 +65,12 @@
                     <li class="nav-item">
                         <a href="#about" class="nav-link"><i></i> About</a>
                     </li>
+                    
                     <li class="nav-item">
-                        <a href="../index.html" class="nav-link"><i class="nc-icon nc-layout-11"></i>Components</a>
+                        <a href="#partners" class="nav-link"><i class="nc-icon nc-layout-11"></i>Partners</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link"><i class="nc-icon nc-book-bookmark"></i> Documentation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#sponsors" class="nav-link"><i></i> Sponsors</a>
+                        <a href="#application" class="nav-link"><i class="nc-icon nc-book-bookmark"></i> Documentation</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link"><i></i> Contact</a>
@@ -86,9 +84,8 @@
                         </a>
                     </li>
 
-
                     <li class="nav-item">
-                        <a href="#donate" class="btn btn-danger btn-round"><i></i>Donate Food4kids</a>
+                        <a href="http://food4kids.ca" class="btn btn-danger btn-round"><i></i>Donate Food4kids</a>
                     </li>
                 </ul>
             </div>
@@ -111,8 +108,7 @@
                 <div class="motto text-center animatable fadeInUp">
                     <h1>Banking Cat</h1>
                     <h3>We know what you need, just like your cat.</h3>
-                    <br />
-                    <!-- <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-outline-neutral btn-round"><i class="fa fa-play"></i>Watch video</a> -->
+                    <br>
                     <button type="button" onclick="location.href='#application'" class="btn btn-outline-neutral btn-round">Try
                         out</button>
                 </div>
@@ -129,7 +125,7 @@
                             <h5 id="test" class="description animated">Banking Cat is an web application provides
                                 personal banking soluction. It analyze your monthly expenditure and income with machine
                                 learning and select a best banking solution for you after comparing all the current
-                                available plans and credit cards. And now support voice assistant on Alexa!
+                                available plans and credit cards. And now support voice assistant on Google Home!
                             </h5>
                             <br>
                             <!-- <a href="#paper-kit" class="btn btn-danger btn-round">See Details</a> -->
@@ -145,10 +141,10 @@
                                     <i class="nc-icon nc-album-2"></i>
                                 </div>
                                 <div class="description">
-                                    <h4 class="info-title">Beautiful Gallery</h4>
-                                    <p class="description">Spend your time generating new ideas. You don't have to
-                                        think of implementing.</p>
-                                    <a href="#pkp" class="btn btn-link btn-danger">See more</a>
+                                    <h4 class="info-title">Cross-Platform</h4>
+                                    <br>
+                                    <p class="description">Since we use Google's Dialogflow, it is easy to deploy on other platforms like Alexa and mobile Apps. </p>
+                                    <a href="#application" class="btn btn-link btn-danger">See more</a>
                                 </div>
                             </div>
                         </div>
@@ -158,9 +154,9 @@
                                     <i class="nc-icon nc-bulb-63"></i>
                                 </div>
                                 <div class="description">
-                                    <h4 class="info-title">New Ideas</h4>
-                                    <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient.</p>
-                                    <a href="#pkp" class="btn btn-link btn-danger">See more</a>
+                                    <h4 class="info-title">Natural Language Processing</h4>
+                                    <p>Provide friendly user interface by using<b>Dialogflow</b>. Just like talking to a real consultant.</p>
+                                    <a href="https://dialogflow.com" class="btn btn-link btn-danger">See more</a>
                                 </div>
                             </div>
                         </div>
@@ -170,9 +166,10 @@
                                     <i class="nc-icon nc-chart-bar-32"></i>
                                 </div>
                                 <div class="description">
-                                    <h4 class="info-title">Statistics</h4>
-                                    <p>Choose from a veriety of many colors resembling sugar paper pastels.</p>
-                                    <a href="#pkp" class="btn btn-link btn-danger">See more</a>
+                                    <h4 class="info-title">Data Analysis</h4>
+                                    <br>
+                                    <p>Analyze your monthly banking statement (csv) and recommend the best solution to you.</p>
+                                    <a href="https://azure.microsoft.com/en-ca/services/analysis-services/" class="btn btn-link btn-danger">See more</a>
                                 </div>
                             </div>
                         </div>
@@ -183,8 +180,8 @@
                                 </div>
                                 <div class="description">
                                     <h4 class="info-title">Delightful design</h4>
-                                    <p>Find unique and handmade delightful designs related items directly from our
-                                        sellers.</p>
+                                    <br>
+                                    <p>Bright and clear user interface design.</p>
                                     <a href="#pkp" class="btn btn-link btn-danger">See more</a>
                                 </div>
                             </div>
@@ -199,7 +196,7 @@
             <!-- Business Partners -->
             <div id="partners" class="section text-center container-fluid">
                 <div class="container">
-                    <h1 class="title animatable fadeInUp">Business Partners</h1>
+                    <h1 class="title animatable fadeInUp">Supported Banks</h1>
                     <br />
                     <br />
                     <br />
@@ -208,18 +205,22 @@
                     <div class="row">
                         <div class="col-sm-3 animatable fadeInUp">
                             <img src="./assets/img/partners/rbc.png" style="height: 100px">
+                            <br>
                         </div>
 
                         <div class="col-sm-3 animatable fadeInUp">
                             <img src="./assets/img/partners/TD.png" style="height: 120px">
+                            <br>
                         </div>
 
                         <div class="col-sm-3 animatable fadeInUp">
                             <img src="./assets/img/partners/CIBC_logo.png" style="height: 120px">
+                            <br>
                         </div>
 
                         <div class="col-sm-3 animatable fadeInUp">
                             <img src="./assets/img/partners/BMO_Logo.png" style="height: 100px">
+                            <br>
                         </div>
 
                     </div>
@@ -248,14 +249,20 @@
                     <div class="row">
                         <div class="col-sm-4 animatable fadeInUp">
                             <img src="./assets/img/platforms/react.png" style="height: 100px">
+                            <br>
+                            <br>
                         </div>
 
                         <div class="col-sm-4 animatable fadeInUp">
                             <img src="./assets/img/platforms/alexa.png" style="height: 120px">
+                            <br>
+                            <br>
                         </div>
 
                         <div class="col-sm-4 animatable fadeInUp">
                             <img src="./assets/img/platforms/google.png" style="height: 150px">
+                            <br>
+                            <br>
                         </div>
 
                     </div>
