@@ -30,12 +30,12 @@
 
     <script type="text/javascript">
         /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
-        (function(d, m){
-          var kommunicateSettings = {"appId":"19b5feeea68bbda6b092915fcf0e7ebc3","conversationTitle":"Banking Cat"};
-          var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
-          s.src = "https://api.kommunicate.io/v2/kommunicate.app";
-          var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
-          window.kommunicate = m; m._globals = kommunicateSettings;
+        (function (d, m) {
+            var kommunicateSettings = { "appId": "19b5feeea68bbda6b092915fcf0e7ebc3", "conversationTitle": "Banking Cat", "botIds": ["banking-cat"] };
+            var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+            s.src = "https://api.kommunicate.io/v2/kommunicate.app";
+            var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+            window.kommunicate = m; m._globals = kommunicateSettings;
         })(document, window.kommunicate || {});
     </script>
 </head>
@@ -255,7 +255,7 @@
                         </div>
 
                         <div class="col-sm-4 animatable fadeInUp">
-                            <img src="./assets/img/platforms/google.png" style="height: 120px">
+                            <img src="./assets/img/platforms/google.png" style="height: 150px">
                         </div>
 
                     </div>
@@ -433,7 +433,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                
+
                 <div class="credits ml-auto">
                     <span class="copyright">
                         &copy; 2018 Banking Cat. All rights reserved.
