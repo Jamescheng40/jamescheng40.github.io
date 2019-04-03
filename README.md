@@ -1,2 +1,2 @@
-# jamescheng40.github.io
-deltahacks v
+# macrobomaster.github.io
+official website of MAC RoboMaster
