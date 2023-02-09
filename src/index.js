@@ -438,7 +438,7 @@ class ChartComponent extends React.Component {
 							<Route path='/LSTMBackward' element={<><Sidebarnav/><LSTMbackwardroute/></>} />
 
 							{/* todo: add the default page here */}
-							<Route path='/' element={<><Sidebarnav/><About/></>} />
+							<Route path='/' element={<><Sidebarnav/><LSTMdEoverdWfroute/></>} />
 							
 							<Route path='/mathbasics/Gradientmatrix' element={<><Sidebarnav/><MathGradientmatrixroute/></>} />
 							<Route path='/test' element={<><Sidebarnav/><Testforothestuff/></>} />
