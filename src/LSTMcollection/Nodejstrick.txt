@@ -1,3 +1,0 @@
-want to load your own modified lib?
-   1, production build ---- ok
-   2, delete dependencies in the package.json and delete one word at a time ---- ok
