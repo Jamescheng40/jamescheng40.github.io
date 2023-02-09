@@ -1,0 +1,43 @@
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; This post will cover the basic math needed for all the LSTM posts you see above. Some equations below will be cropped based on the <a href="http://a">paper</a>.</p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:20px">Explanation of summation over dot product and their derivative</span></p>
+
+<p>&nbsp;&lt;Insert dividing line for dot product summation explanation&gt;</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; First of all, let us look at why dot-product&nbsp;<strong>⨀&nbsp;</strong>can be replaced with&nbsp;<strong>&sum;a &otimes; b</strong>.&nbsp;&nbsp;The answer is actually simpler than you think, let us look at an example below. Let us assume that <strong>a</strong> is a <strong>1xT</strong> matrix and <strong>b </strong>is a <strong>Tx1</strong> matrix.&nbsp;</p>
+
+<p>&lt;insert math formula here&gt;</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;As you can see above, if you were to multiply the matrix, which you have probably learned from your University Calculus course, the end result is a sum of the product from each element of the matrix. So it makes sense that it is a summation product of row and column. Let us write down the final result.</p>
+
+<p>&lt;insert math formula here&gt;</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;To find the derivative is simple. Let us look at what the paper stated.</p>
+
+<p>&lt;Insert image here&gt;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:20px">Explanation of Matrix Jacobian or partial derivative of a matrix</span></p>
+
+<p>&nbsp;&lt;Insert dividing line for dot product summation explanation&gt;</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;When dealing with matrix and their derivative, it will be imperative to know how. Here is the summary from the paper &lt;1802.01528.pdf&gt;.</p>
+
+<p>&lt;Insert image here&gt;</p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:20px">Some common glossaries used on the derivation page</span></p>
+
+<p><span style="font-size:20px">&nbsp;</span>&lt;Insert dividing line for glossaries explanation&gt;</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;You might commonly see diag in the equation, what is diag. Diag is basically an identity matrix except the diagonal has been multiplied with a constant. For example diag(x1) is basically</p>
+
+<p>&lt;insert math equations here&gt;</p>
+
+<p>&nbsp;</p>
